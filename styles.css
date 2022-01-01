@@ -1,0 +1,266 @@
+body {
+    transition: 0.3s;
+    margin: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 100;
+    margin: 20px 0 10px 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0px;
+}
+
+a {
+    color: plum;
+    font-size: 16px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: darkgray;
+    position: relative;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    transition: 0.3s;
+    box-shadow: 
+        inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark {
+    background-color: rgb(99, 99, 99);
+    transition: 0.3s;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.dark > * {
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    height: 60vh;
+    padding: 20px;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-text {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+}
+
+#stream {
+    color: rgb(41, 41 ,41);
+    background-image: url(file:///Users/aaronselby/Downloads/twitter.png);
+    background-size: cover;
+}
+
+#firebase {
+    color: rgb(255, 255, 255);
+    background-image: url(file:///Users/aaronselby/Downloads/campfire.jpeg);
+    background-size: cover;
+}
+
+#wine {
+    color: rgb(0, 0, 0);
+    background-image: url(file:///Users/aaronselby/Downloads/emptywine.jpg);
+    background-size: cover;
+}
+
+#fizzbuzz {
+    color: rgb(255, 255, 255);
+    background-image: url(file:///Users/aaronselby/Downloads/bumble.jpg);
+    background-size: cover;
+}
+
+.dark .square {
+    background-color: rgb(128, 128, 128);
+}
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    display: block;
+}
+
+.cube {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-25deg) skew(25deg);
+}
+
+#js {
+    background-image: url(file:///Users/aaronselby/Downloads/js.png);
+    background-size: cover;
+    background-color: rgb(56, 56, 56);
+    box-shadow: -60px 60px 20px rgb(52 52 52/ 15%);
+}
+
+#js:before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 100%;
+    background-color: rgb(245, 230, 115);
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+}
+
+#js:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 21px;
+    background-color: rgb(255, 240, 120);
+    transform: skewX(-45deg);
+    left: -10px;
+    bottom: -20px;
+}
+
+#react {
+    left: 100px;
+    bottom: 100px;
+    background-image: url(file:///Users/aaronselby/Downloads/react-1-logo-png-transparent.png);
+    background-size: cover;
+    background-color: rgb(56, 56, 56);
+    box-shadow: -60px 60px 20px rgb(52 52 52/ 15%);
+}
+
+#react:before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 100%;
+    background-color: rgb(51, 51, 51);
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+}
+
+#react:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 21px;
+    background-color: rgb(60, 60, 60);
+    transform: skewX(-45deg);
+    left: -10px;
+    bottom: -20px;
+}
+
+#nextjs {
+    left: 200px; 
+    top: 20px;
+    background-image: url(file:///Users/aaronselby/Downloads/nextjs-logo.png);
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -60px 60px 20px rgb(52 52 52/ 15%);
+}
+
+#nextjs:before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+}
+
+#nextjs:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 21px;
+    background-color: rgb(247, 247, 247);
+    transform: skewX(-45deg);
+    left: -10px;
+    bottom: -20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 100px 30px;
+    background-color: rgb(255, 240, 220);
+}
+
+.dark footer {
+    background-color: rgb(56, 56, 56);
+}
+
+@media only screen and (min-width: 970px) {
+    .main-text {
+        width: 50%;
+    }
+    .square {
+        width: 48%;
+        margin: 1%;
+        height: 600px;
+    }
+}
